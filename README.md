@@ -120,7 +120,7 @@ A **Hybrid Topology** is a combination of two or more different network topologi
 
 ---
 
-# Network Protocols
+# Day 3 Network Protocols
 
 A **protocol** is a set of rules that defines how data is transmitted and received over a network. Protocols ensure reliable communication between devices.
 
@@ -234,6 +234,3 @@ The **OSI Model** is a seven-layer framework that explains how data travels from
 * Responsible for transmitting raw bits over physical media.
 * Includes cables, connectors, hubs, and electrical signals.
 
-## Conclusion
-
-Day 2 provided a strong foundation in networking concepts. We learned how different network topologies are structured, how protocols and port numbers enable communication, the differences between TCP and UDP, and how the seven layers of the OSI Model work together to ensure efficient and reliable data transmission across networks.
