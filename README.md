@@ -1,3 +1,4 @@
 **Day 1 – WhiteHat Company Training**
+
 Today was my first day of training at WhiteHat Company. The session started with a warm welcome from the team, and we were introduced to the company, its mission, values, and work culture. It was a great opportunity to learn about how the organization operates and what is expected during the training.
 The trainers also explained the complete 45-day training schedule, including the learning objectives, projects, assignments, and milestones that we will complete throughout the program. They gave us an overview of the technologies we will learn and the skills we are expected to develop.Overall, the first day was informative and motivating. I am excited to begin this learning journey and look forward to gaining new knowledge and practical experience during the training.
