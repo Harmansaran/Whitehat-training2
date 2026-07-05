@@ -234,3 +234,93 @@ The **OSI Model** is a seven-layer framework that explains how data travels from
 * Responsible for transmitting raw bits over physical media.
 * Includes cables, connectors, hubs, and electrical signals.
 
+# Day 3 – Subnetting and Hosts
+
+Today, I learned the fundamentals of **Subnetting** and **Hosts**, which are essential concepts in computer networking and CCNA.
+
+## What is an IP Address?
+
+An IP (Internet Protocol) address is a unique identifier assigned to every device connected to a network. An IPv4 address consists of 32 bits divided into four octets (e.g., `192.168.1.10`).
+
+## Network ID and Host ID
+
+An IP address is divided into two parts:
+
+* **Network ID** – Identifies the network.
+* **Host ID** – Identifies the specific device within that network.
+
+The subnet mask determines which portion of the IP address belongs to the network and which belongs to the host.
+
+## What is a Host?
+
+A host is any device connected to a network, such as:
+
+* Computer
+* Laptop
+* Mobile phone
+* Printer
+* Server
+* Router
+
+Each host requires a unique IP address to communicate within the network.
+
+## Subnet Mask and CIDR
+
+A subnet mask separates the network portion from the host portion of an IP address.
+
+Example:
+
+* Subnet Mask: `255.255.255.0`
+* CIDR Notation: `/24`
+
+CIDR notation indicates how many bits are allocated to the network portion of the IP address.
+
+## What is Subnetting?
+
+Subnetting is the process of dividing a large network into multiple smaller networks called **subnets**. It helps improve network performance, enhances security, and makes IP address management more efficient.
+
+For example, a `/24` network can be divided into four `/26` subnets, with each subnet supporting 62 usable host addresses.
+
+## Host Calculation
+
+The number of usable hosts in a subnet is calculated using the formula:
+
+**Usable Hosts = 2^(Host Bits) − 2**
+
+The subtraction of 2 accounts for:
+
+* The **Network Address** (first IP address)
+* The **Broadcast Address** (last IP address)
+
+These addresses cannot be assigned to hosts.
+
+## Network and Broadcast Addresses
+
+* **Network Address:** The first IP address in a subnet that identifies the subnet itself.
+* **Broadcast Address:** The last IP address in a subnet used to send data to all devices within that subnet.
+* **Usable Host Range:** All IP addresses between the network and broadcast addresses.
+
+## Common CIDR Values
+
+| CIDR | Total IP Addresses | Usable Hosts |
+| ---- | -----------------: | -----------: |
+| /24  |                256 |          254 |
+| /25  |                128 |          126 |
+| /26  |                 64 |           62 |
+| /27  |                 32 |           30 |
+| /28  |                 16 |           14 |
+| /29  |                  8 |            6 |
+| /30  |                  4 |            2 |
+
+## Key Takeaways
+
+* Learned the structure of IPv4 addresses.
+* Understood the difference between Network ID and Host ID.
+* Studied the purpose of subnet masks and CIDR notation.
+* Learned how subnetting divides large networks into smaller subnets.
+* Practiced calculating usable host addresses using subnetting formulas.
+* Understood the concepts of Network Address, Broadcast Address, and Host Range.
+
+This session strengthened my understanding of IP addressing and subnetting, providing a solid foundation for advanced networking concepts in CCNA.
+
+
