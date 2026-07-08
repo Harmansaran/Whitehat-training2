@@ -312,15 +312,381 @@ These addresses cannot be assigned to hosts.
 | /29  |                  8 |            6 |
 | /30  |                  4 |            2 |
 
-## Key Takeaways
+# Day 4 - Hashing, Encryption & Encoding
 
-* Learned the structure of IPv4 addresses.
-* Understood the difference between Network ID and Host ID.
-* Studied the purpose of subnet masks and CIDR notation.
-* Learned how subnetting divides large networks into smaller subnets.
-* Practiced calculating usable host addresses using subnetting formulas.
-* Understood the concepts of Network Address, Broadcast Address, and Host Range.
+## Introduction
 
-This session strengthened my understanding of IP addressing and subnetting, providing a solid foundation for advanced networking concepts in CCNA.
+Today I learned three important concepts used in cybersecurity and software development:
+
+* **Hashing**
+* **Encryption**
+* **Encoding**
+
+Although these terms are often used interchangeably, they serve completely different purposes.
+
+---
+
+# 1. Hashing
+
+## Definition
+
+Hashing is the process of converting data of any size into a fixed-size string called a **hash value** or **digest** using a mathematical algorithm.
+
+Hashing is a **one-way process**, meaning the original data cannot be recovered from the hash.
+
+### Example
+
+Original Text:
+
+```text
+Hello123
+```
+
+SHA-256 Hash:
+
+```text
+6f5902ac237024bdd0c176cb93063dc4...
+```
+
+Even changing one character completely changes the hash.
+
+Example:
+
+```text
+Hello123
+```
+
+and
+
+```text
+hello123
+```
+
+produce completely different hashes.
+
+---
+
+## Characteristics
+
+* One-way process
+* Fixed output length
+* Fast to generate
+* Same input always gives same output
+* Small input changes create a completely different hash
+
+---
+
+## Common Hashing Algorithms
+
+* MD5 (Not secure)
+* SHA-1 (Deprecated)
+* SHA-256
+* SHA-512
+* bcrypt
+* Argon2
+
+---
+
+## Uses of Hashing
+
+### Password Storage
+
+Instead of storing passwords directly:
+
+Wrong
+
+```text
+Password = hello123
+```
+
+Correct
+
+```text
+Password Hash = SHA256(hello123)
+```
+
+When the user logs in:
+
+1. User enters password.
+2. System hashes the entered password.
+3. Compares it with the stored hash.
+4. If both match, access is granted.
+
+---
+
+### File Integrity
+
+When downloading software, companies provide a hash.
+
+Example:
+
+```
+setup.exe
+
+SHA256:
+A2D93F4...
+```
+
+After downloading:
+
+* Generate the file hash.
+* Compare it with the provided hash.
+* If both match, the file has not been modified.
+
+---
+
+### Digital Signatures
+
+Hashing is used before creating digital signatures because hashing is faster than signing large files directly.
+
+---
+
+## Advantages
+
+* Fast
+* Secure verification
+* Detects data changes
+* Fixed-size output
+
+---
+
+## Disadvantages
+
+* Cannot recover original data
+* Weak algorithms like MD5 and SHA-1 are vulnerable to attacks
+
+---
+
+# 2. Encryption
+
+## Definition
+
+Encryption converts readable data (**plaintext**) into unreadable data (**ciphertext**) using a key.
+
+Unlike hashing, encryption is **reversible**.
+
+The original data can be recovered using the correct decryption key.
+
+---
+
+## Process
+
+```
+Plain Text
+      ↓
+Encryption Algorithm + Key
+      ↓
+Cipher Text
+      ↓
+Decryption Key
+      ↓
+Original Plain Text
+```
+
+---
+
+## Example
+
+Plain Text:
+
+```
+My Password = hello123
+```
+
+Encrypted:
+
+```
+Xf92@ad89#Lm
+```
+
+After decryption:
+
+```
+My Password = hello123
+```
+
+---
+
+## Types of Encryption
+
+### Symmetric Encryption
+
+Uses the **same key** for encryption and decryption.
+
+Examples:
+
+* AES
+* DES
+* Blowfish
+
+Advantages:
+
+* Very fast
+* Suitable for encrypting large amounts of data
+
+Disadvantages:
+
+* Key must be shared securely.
+
+---
+
+### Asymmetric Encryption
+
+Uses **two keys**:
+
+* Public Key
+* Private Key
+
+Examples:
+
+* RSA
+* ECC
+
+Advantages:
+
+* Secure key exchange
+* Digital signatures
+
+Disadvantages:
+
+* Slower than symmetric encryption
+
+---
+
+## Uses of Encryption
+
+* HTTPS websites
+* Online banking
+* WhatsApp messages
+* VPNs
+* Secure emails
+* Cloud storage
+
+---
+
+## Advantages
+
+* Protects confidential data
+* Data can be recovered with the correct key
+* Prevents unauthorized access
+
+---
+
+## Disadvantages
+
+* Requires secure key management
+* Can be slower than hashing
+
+---
+
+# 3. Encoding
+
+## Definition
+
+Encoding converts data into another format so that different systems can store or transmit it correctly.
+
+Encoding is **not** a security mechanism.
+
+It is easily reversible.
+
+---
+
+## Example
+
+Text:
+
+```
+Hello
+```
+
+Base64 Encoding:
+
+```
+SGVsbG8=
+```
+
+Base64 Decoding:
+
+```
+Hello
+```
+
+---
+
+## Common Encoding Methods
+
+* Base64
+* ASCII
+* Unicode
+* UTF-8
+* URL Encoding
+
+---
+
+## Uses of Encoding
+
+* Sending email attachments
+* Storing binary data as text
+* Web URLs
+* APIs
+* JSON data transfer
+
+---
+
+## Advantages
+
+* Easy data transfer
+* Compatible across different systems
+* Prevents data corruption during transmission
+
+---
+
+## Disadvantages
+
+* Provides no security
+* Anyone can decode the data
+
+---
+
+# Difference Between Hashing, Encryption and Encoding
+
+| Feature    | Hashing              | Encryption              | Encoding           |
+| ---------- | -------------------- | ----------------------- | ------------------ |
+| Purpose    | Verify integrity     | Protect confidentiality | Change data format |
+| Reversible | No                   | Yes                     | Yes                |
+| Uses Key   | No                   | Yes                     | No                 |
+| Security   | Yes                  | Yes                     | No                 |
+| Main Use   | Passwords, Integrity | Secure Communication    | Data Transmission  |
+
+---
+
+# Real-Life Examples
+
+## Hashing
+
+Instagram stores user passwords as hashes instead of plain text.
+
+---
+
+## Encryption
+
+When you visit an HTTPS website, the communication between your browser and the server is encrypted.
+
+---
+
+## Encoding
+
+When sending an image through email, it is often encoded using Base64 before transmission.
+
+---
+
+# Key Takeaways
+
+* **Hashing** is used for password storage and verifying data integrity. It is a one-way process.
+* **Encryption** protects sensitive information and allows authorized users to recover the original data using a key.
+* **Encoding** changes the format of data for storage or transmission and is not meant for security.
+* Although all three transform data, their purposes are completely different.
+
+
 
 
