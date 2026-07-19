@@ -831,7 +831,8 @@ clear – Clear the terminal screen.
 
 ifconfig / ip a – Display network interface information.
 
-**Day 18 **
+
+**Day 18**
 
 PD class 
 
