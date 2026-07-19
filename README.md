@@ -724,4 +724,45 @@ After completing the configurations, we tested the network connectivity using th
 **Day 12**
 There are Interbatch compegtition on saturday, Debate, coding quiz and i participate in coding quiz.
 
+**Day 13**
+On this day we configure V lan and sends message from one PC to another PC. Also configure the router and server.
+
+**Day 14** 
+Leave
+
+I was on leave today and did not attend the training session. Therefore, I did not participate in any practical activities or learning tasks on this day.
+
+
+Day 15 – Switch Configuration and Basic Commands
+
+During today's training session, we learned about the basic configuration of a network switch in Cisco Packet Tracer. We practiced accessing the switch through the Command Line Interface (CLI) and executed various basic commands.
+
+The commands covered included:
+
+Entering privileged EXEC mode (enable)
+Entering global configuration mode (configure terminal)
+Setting the switch hostname (hostname)
+Configuring console password
+Configuring enable password
+Saving the configuration (copy running-config startup-config)
+Viewing the current configuration (show running-config)
+Displaying VLAN information (show vlan brief)
+
+Day 16 – Kali Linux Installation and Basic Commands
+
+During today's training session, we learned how to download and install Kali Linux. The installation process and system requirements were explained, and we successfully set up Kali Linux on our systems.
+
+After the installation, we practiced some basic Linux commands, including:
+
+pwd – Display the current working directory.
+ls – List files and directories.
+cd – Change the current directory.
+mkdir – Create a new directory.
+rmdir – Remove an empty directory.
+touch – Create a new file.
+cp – Copy files and directories.
+mv – Move or rename files.
+rm – Delete files.
+cat – Display the contents of a file.
+clear – Clear the terminal screen.
 
