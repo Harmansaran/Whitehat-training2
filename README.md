@@ -703,5 +703,25 @@ Test of all the previously done topics.
 revision of subnetting topics
 
 
+**Day 10**
+During today's training session, we downloaded and installed Cisco Packet Tracer on our systems. We also learned the basic installation process and its purpose in networking.
+
+
+**Day 11**
+– Cisco Packet Tracer: Network Connection and Device Configuration
+
+During today's training session, we learned how to create a basic network topology in Cisco Packet Tracer using PCs, a Switch, and a Router. We connected the devices using the appropriate cables and established communication between them.
+
+We also learned how to configure the following devices:
+
+PCs: Assigned IP addresses, subnet masks, and default gateways.
+Switch: Performed basic switch configuration, including setting the hostname and accessing configuration mode.
+Router: Configured interfaces with IP addresses, enabled the interfaces, and performed basic router configuration.
+
+After completing the configurations, we tested the network connectivity using the ping command and verified that the devices were communicating successfully.
+
+
+**Day 12**
+There are Interbatch compegtition on saturday, Debate, coding quiz and i participate in coding quiz.
 
 
