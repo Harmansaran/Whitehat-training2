@@ -733,36 +733,159 @@ Leave
 I was on leave today and did not attend the training session. Therefore, I did not participate in any practical activities or learning tasks on this day.
 
 
-Day 15 – Switch Configuration and Basic Commands
+**Day 15 **
+– Switch Configuration and Basic Commands
 
 During today's training session, we learned about the basic configuration of a network switch in Cisco Packet Tracer. We practiced accessing the switch through the Command Line Interface (CLI) and executed various basic commands.
 
 The commands covered included:
 
 Entering privileged EXEC mode (enable)
+
+
 Entering global configuration mode (configure terminal)
+
 Setting the switch hostname (hostname)
+
 Configuring console password
+
 Configuring enable password
+
 Saving the configuration (copy running-config startup-config)
+
 Viewing the current configuration (show running-config)
+
 Displaying VLAN information (show vlan brief)
 
-Day 16 – Kali Linux Installation and Basic Commands
+**Day 16**
+
+Kali Linux Installation and Basic Commands
 
 During today's training session, we learned how to download and install Kali Linux. The installation process and system requirements were explained, and we successfully set up Kali Linux on our systems.
 
 After the installation, we practiced some basic Linux commands, including:
 
 pwd – Display the current working directory.
+
 ls – List files and directories.
+
 cd – Change the current directory.
+
 mkdir – Create a new directory.
+
 rmdir – Remove an empty directory.
+
 touch – Create a new file.
+
 cp – Copy files and directories.
+
 mv – Move or rename files.
+
 rm – Delete files.
+
 cat – Display the contents of a file.
+
 clear – Clear the terminal screen.
+
+**Day 17**
+
+– OWASP Top 10 and Basic Kali Linux Commands
+
+During today's training session, we were introduced to the OWASP Top 10, which lists the most critical web application security risks. The trainer explained the purpose of OWASP and discussed common vulnerabilities such as:
+
+Broken Access Control
+
+Cryptographic Failures
+
+Injection
+
+Insecure Design
+
+Security Misconfiguration
+
+Vulnerable and Outdated Components
+
+Identification and Authentication Failures
+
+Software and Data Integrity Failures
+
+Security Logging and Monitoring Failures
+
+Server-Side Request Forgery (SSRF)
+
+We also practiced some basic Kali Linux commands, including:
+
+pwd – Display the current directory.
+
+ls – List files and folders.
+
+cd – Change the directory.
+
+mkdir – Create a new directory.
+
+touch – Create a new file.
+
+cat – Display the contents of a file.
+
+clear – Clear the terminal screen.
+
+ifconfig / ip a – Display network interface information.
+
+**Day 18 **
+
+PD class 
+
+**Day 19**
+
+– Introduction to Metasploit Framework and Basic Commands
+
+During today's training session, we learned about the Metasploit Framework, one of the most widely used penetration testing tools for identifying and validating security vulnerabilities in a controlled and authorized environment.
+
+The trainer explained the purpose of Metasploit, its interface, and the basic workflow used during security assessments. We also practiced several basic Metasploit commands, including:
+
+
+msfconsole – Start the Metasploit Framework.
+
+help – Display available commands.
+
+search – Search for exploit, auxiliary, or payload modules.
+
+use – Select a module to work with.
+
+show options – Display the required options for the selected module.
+
+set – Set the value of a required option (such as target host or port).
+
+show payloads – Display compatible payloads.
+
+set payload – Select a payload for the module.
+
+run or exploit – Execute the selected module.
+
+back – Return to the previous menu.
+
+info – Display detailed information about the selected module.
+
+sessions – View active sessions.
+
+exit – Close the Metasploit console.
+
+The importance of using Metasploit only in authorized and legal penetration testing environments was also emphasized.
+
+**Day 20**
+
+– Wireshark and Packet Sniffing
+
+During today's training session, we learned about Wireshark, a network protocol analyzer used to capture and analyze network traffic. The trainer explained the concept of packet sniffing and demonstrated how Wireshark captures data packets transmitted over a network.
+
+We also learned how to:
+
+Launch Wireshark and select a network interface.
+Start and stop packet capture.
+Capture live network traffic.
+Apply basic filters (such as http, tcp, udp, icmp, and dns) to analyze specific packets.
+Examine packet details, including source IP address, destination IP address, protocol, and packet contents.
+Save and reopen captured packet files for later analysis.
+
+The trainer also discussed the importance of using Wireshark responsibly and only on networks where monitoring is authorized.
 
