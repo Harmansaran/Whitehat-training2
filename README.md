@@ -687,6 +687,21 @@ When sending an image through email, it is often encoded using Base64 before tra
 * **Encoding** changes the format of data for storage or transmission and is not meant for security.
 * Although all three transform data, their purposes are completely different.
 
+**Day 5**
+Revision of subneting topics and done practice.
+
+**Day 6**
+PD class and Debate compition
+
+**Day 7**
+Project work and revision of previous topics.
+
+**Day 8**
+Test of all the previously done topics.
+
+**Day 9**
+revision of subnetting topics
+
 
 
 
